@@ -12,7 +12,6 @@ var currentScore = 0;
 
 var bestScore = 0;
 
-
 function startGame() {
     if (!started) {
         $(".start").hide();
@@ -38,14 +37,13 @@ function nextSequence() {
 $(".tiles").click(function () {
     var userChosenColor = $(this).attr("id");
     userClickedPattern.push(userChosenColor);
-    playSound(soundName, 100);
+    playSound(userChosenColor);
     animatePress(userChosenColor);
     checkAnswer(userClickedPattern.length - 1);
 });
 
 function playSound(name) {
-    var audio = new Audio("sounds/buttons sound.mp3");
-    audio.volume = volume;
+    var audio = new Audio("sounds/" + name + ".mp3");
     audio.play();
 }
 
@@ -61,7 +59,7 @@ function checkAnswer(currentLevel) {
         if (userClickedPattern.length === gamePattern.length) {
             setTimeout(function () {
                 nextSequence();
-            }, 1500);
+            }, 1000);
             currentScore++;
             $(".current-score").text("Your Score: " + currentScore);
             if (currentScore > bestScore) {
@@ -89,6 +87,7 @@ function startOver() {
 }
 
 $(".start").click(startGame);
+
 
 $(".restart").click(function () {
     $(".restart").hide();
