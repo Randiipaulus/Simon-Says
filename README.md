@@ -1,4 +1,4 @@
-### Hi there 👋
+Hey! my name is Randy Paulus, am working on my first browser game its called "Simon Say" it was an expirent working on it, what i like the most was styling hopefully am not the only one that like the way it looks.
 
 <!--
 **Randiipaulus/randiipaulus** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
