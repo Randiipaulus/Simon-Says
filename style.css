@@ -1,95 +1,154 @@
-.circle {
-    width: 400px;
-    height: 400px;
-    border-radius: 50%;
-    background-color: 989997;
-    position:absolute;
+.BK{
+    background-color: rgb(66, 45, 97);
+    background-image:url("https://img.freepik.com/free-photo/3d-illustration-blue-purple-futuristic-sci-fi-techno-lights-cool-background_181624-57587.jpg?w=1380&t=st=1685986715~exp=1685987315~hmac=ce4c9852fb18d8f92b5ed30f80e5e5df269fac5e9cfa0d06be5a5340657ecd6b");
+    background-position: center;
+    background-size: cover;
+}
+.box{
     display: grid;
-    /* place-items: center; */
-    flex-wrap: wrap;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
-    grid-gap: 10px;
+    grid-row: auto;
+    background-color: rgb(17, 38, 53);
+    margin-left: 38%;
+    margin-top: 30px;
+    width: 320px;
+    height: 320px;
     overflow: hidden;
-    max-width: 100%;
-
-  }
-.corner{
-    background-color: #3d3d3d;
-    display: grid;
-    place-items: center;
-    width: 425px;
-    height: 425px;
-    border-radius: 50%;
-    left: 25%;
-    top: 25%;
-    position: absolute;
+    gap: 10px;
+    background: #181818;
+    box-shadow:  -38px -38px 76px #181818, 38px 38px 76px #181818;
+    border-radius: 10%;
 }
-.colors{
-    /* background-color: blue; */
-    padding: 5px;
-    position: auto;
-    
-}
-.medio{
-    position: center;
-    background-color: rgb(156, 156, 156);
-    width: 200px;
-    height: 150px;
-    /* border-radius: 50%; */
-    /* top: 50%; */
-    margin-left: 10px;
-    overflow: auto;
-    align-items: center;
-}
-.start{
-    font-size: 30px;
-    text-shadow: 52px;
-    font-weight: bold;
-    margin-top: 15px;
-    margin-left: 15px;
-    /* position: relative; */
-    font-family: 'Roboto Condensed', sans-serif;
-}
-.restart{
-    font-size: 30px;
-    /* position: center; */
-    margin-left: 25%;
-    font-family: 'Roboto Condensed', sans-serif;
-    margin-top: 0;
-
-
+.tiles{
+    padding: 10px;
+    flex-basis: 50%;
+    position: relative;
+    size: 80px;
+    cursor: pointer;
 }
 #red{
-    background-color: #a00000;
-    /* background-image: url('https://img.freepik.com/premium-photo/water-drops-red-background_187166-47183.jpg'); */
+    background-color: red;
+    background-image: url("images/red.jpg");
+    background-size: cover;
 }
 #blue{
-    background-color: #0060a9;
-}
-#yellow{
-    background-color: #aaaa00;
+    background-color:blue ;
+    background-image: url("images/blue.jpg");
+    background-size: cover;
 }
 #green{
-    background-color: #40ae00;
+    background-color: green;
+    background-image: url("images/WhatsApp Image 2023-06-05 at 15.12.23.jpg");
+    background-size: cover;
 }
-.background{
-    background-image: url('');
-    border-image-width: 100%;
+#yellow{
+    background-color: yellow;
+    background-image: url("images/yellow'.jpg");
+    background-size: cover;
 }
+.BT{
+    margin-top: 50px;
+    margin-left: 41%;
+}
+.start{
+    font-size: 20px;
+    font-family: 'Caveat', cursive;
+    width: 120px;
+    border-radius: 10px;
+    background: #333;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444, inset -5px -5px 10px #222; 
+    border: none;
+    color: rgb(255, 255, 255);
+    transition: 500ms;
+    cursor: pointer;
+}
+button:hover {
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222, inset -5px -5px 10px #444;
+    color: #d6d6d6;
+    transition: 500ms;
+  }
+.restart{
+    font-size: 20px;
+    font-family: 'Caveat', cursive;
+    width: 120px;
+    border-radius: 10px;
+    background: #333;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444, inset -5px -5px 10px #222; 
+    border: none;
+    color: rgb(255, 255, 255);
+    transition: 500ms;
+    cursor: pointer;
+}
+
 .title{
-    position: right;
+    font-family: 'Kaushan Script', cursive;
     font-size: 50px;
-    margin-left: 40%;
-
+    margin-left: 31%;
+    text-shadow:  -38px -38px 76px #ffffff, 38px 38px 76px;
+    color: azure;
 }
-#header{
-    display: grid;
-    background-color: aquamarine;
-    padding: 0%;
-    margin-top: 0%;
-    width: 100%;
-    height: 5%;
-
+.music{
+    font-size: 30px;
+    margin-top: 40px;
+    margin-left: 10px;
+    font-family: 'Caveat', cursive;
+    width: 96px;
+    border-radius: 10px;
+    background: #88888849;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #444, inset -5px -5px 10px #222; 
+    border: none;
+    color: rgba(224, 224, 224, 0.695);
+    transition: 500ms;
+    cursor: pointer;
 }
-
+header{
+    background-color: rgba(54, 99, 115, 0.611);
+    height: 80px;
+    display: flex;
+    overflow: hidden;
+}
+.floor{
+    margin-top: 25px;
+    background-color: rgba(76, 75, 75, 0.349);
+}
+.p{
+    color: #d0d0d0;
+    font-size: 14px;
+    margin-left: 10px;
+}
+.pp{
+  color: #d0d0d0;
+    margin-left: 17px;
+    font-size: 14px;
+}
+.scores{
+    background-color: rgba(131, 193, 216, 0.713);
+    display: block;
+    position: absolute;
+    margin-left: 85.4%;
+    width: 170px;
+    border-radius: 10%;
+    box-shadow: -5px -5px 15px #444, 5px 5px 15px #222, inset 5px 5px 10px #222, inset -5px -5px 10px #444;
+    
+}
+.current-score{
+    font-size: 25px;
+    font-family: 'Caveat', cursive;
+    margin-left: 15px;
+  
+}
+.message{
+    font-family: 'Caveat', cursive;
+    margin-left: 15px;
+}
+.best-score{
+    font-size: 25px;
+    font-family: 'Caveat', cursive;
+    margin-left: 15px;
+}
