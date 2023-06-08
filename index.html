@@ -1,66 +1,51 @@
 <!DOCTYPE html>
+<style>
+   @import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap');
+   @import url('https://fonts.googleapis.com/css2?family=Caveat&family=Indie+Flower&display=swap');
+   @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Indie+Flower&family=Monomaniac+One&family=Poller+One&family=Roboto+Condensed:wght@300&display=swap');
+</style>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="main.js"></script>
+    <title>Simon Says Game</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
+<body class="BK">
 
-<body class="background">
+<header>
+    <div class="title">Simon Says!</div>
+</header>
 
-<div id="header">
-    <p class="title">Simon Say</p>
-</div>
-<br>
-<div class="medio">
-            <h1 class="start">Start Game</h1>
-            <h2 class="restart">restart</h2>
-        </div>
-<br>
-<div class="corner">
-    <div class="circle">
-        <div class="colors" id="green"></div>
-        <div class="colors" id="red"></div>
-        <div class="colors" id="yellow"></div>
-        <div class="colors" id="blue"></div>
-    </div>
+<div class="scores">
+    <h3 class="current-score">Your Score: 0</h3>
+    <h3 class="message"></h3>
+    <h3 class="best-score">Best Score: 0</h3>
 </div>
 
-<div class="score">
-    <div class="derecho"></div>
-    <div class="izquierdo"></div>
-    <div class="box"></div>
-    <div class="out-box"></div>
-
+<div class="box">   
+    <button id="green" class="tiles" data-sound="green"></button>
+    <button id="red" class="tiles" data-sound="red"></button>
+    <button id="yellow" class="tiles" data-sound="yellow"></button>
+    <button id="blue" class="tiles" data-sound="blue"></button>
 </div>
-    
+
+<div class="BT">
+    <button class="start">Start Game</button>
+    <button class="restart">Restart Game</button>
+</div>
+
+<div class="floor">
+    <div class="p">LEARN MORE</div>
+    <div class="pp">Simon Says is a captivating memory game that puts players' recollection skills to the test. The game begins with Simon, the virtual opponent, displaying a sequence of colors, 
+        such as red, green, blue, and yellow, in a specific order. Players must then replicate the sequence by clicking on corresponding color 
+        buttons. With each successful reproduction, the game becomes progressively more challenging, introducing longer and more complex color sequences. Players rely on their memory to accurately recall 
+        the order of the colors and advance to higher levels.</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
-
-<!-- game description or marketing description:
- Read me: 
-    game description
-         a game where you need to test your memory and your color reconigtion.
-
-    marketing description
-        come and see how strong is your memory, show your friends how far can you get, 
-      beat family member and friens.
-
-css for the planning of this game! 
-
-a circle 
-4 colors (red, blue, green, yellow)
-a start bottom in the middle 
-a smaller bottom under the start 
-audio rigntones or piano tones?
-should i add a background picture or a plain color?? -->
-
-
-
-
-
-
