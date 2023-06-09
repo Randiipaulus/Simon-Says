@@ -1,3 +1,7 @@
+window.onload = function() {
+    document.body.style.zoom = "150%";
+  };
+
 var buttonColors = ["red", "blue", "green", "yellow"];
 
 var gamePattern = [];
